@@ -6,4 +6,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # Base App Path
     path("", include("second_app.urls")),
+    # Alternate method
+    path("second_app/", include("second_app.urls")),
 ]

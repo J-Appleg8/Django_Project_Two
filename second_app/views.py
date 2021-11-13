@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("<em>My Second App</em>")
+    # return HttpResponse("<em>My Second App</em>")
+    return HttpResponse("My Second App")
