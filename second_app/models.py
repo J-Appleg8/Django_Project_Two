@@ -1,5 +1,6 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
+from django.db.models.fields import CharField, EmailField
 
 
 class Topic(models.Model):
@@ -24,3 +25,9 @@ class AccessRecord(models.Model):
 
     def __str__(self):
         return str(self.date)
+
+
+class User(models.Model):
+    first_name = CharField(max_length=264)
+    last_name = CharField(max_length=264)
+    email = EmailField(max_length=264)
